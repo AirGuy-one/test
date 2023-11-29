@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Pseudo roulette game</h1>
+    <form method="post">
+        {% csrf_token %}
+        {% if cell == 'To play game press the button' or cell == 'Jackpot!' %}
+        <p>{{ cell }}</p>
+        {% else %}
+        <p>Here is the number that you got: {{ cell }}</p>
+        {% endif %}
+        <button type="submit">Play</button>
+    </form>
+</body>
+</html>
