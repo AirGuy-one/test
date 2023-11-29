@@ -1,6 +1,0 @@
-if cell_number <= 10 then
-вот выбил он хню, потом надо cell_number++, remove current cell value list of cell values
-
-I can also create in db model for cell itself to retrieve from here values and don't use list for it
-
-I need to parse already exist cells from db using django orms
